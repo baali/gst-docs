@@ -1,4 +1,4 @@
-TEX = pdflatex -shell-escape -interaction=nonstopmode -file-line-error
+TEX = pdflatex -interaction nonstopmode
 
 lut:
 	$(TEX) lut.tex
