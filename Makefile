@@ -1,5 +1,7 @@
 TEX = pdflatex -interaction nonstopmode
 
+all: lut.pdf noc.pdf coverletter.pdf declaration.pdf
+
 lut.pdf:
 	$(TEX) lut.tex
 
@@ -17,6 +19,4 @@ clean:
 	rm *.pdf
 	rm *.log
 
-all: lut.pdf noc.pdf coverletter.pdf declaration.pdf
-
-.PHONY: lut.pdf noc.pdf coverletter.pdf declaration.pdf
+.PHONY: all
