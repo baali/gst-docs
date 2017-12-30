@@ -1,18 +1,19 @@
 TEX = pdflatex -interaction nonstopmode
 
+.SUFFIXES: .tex
+
+%.pdf:	%.tex
+	$(TEX) $<
+
 all: lut.pdf noc.pdf coverletter.pdf declaration.pdf
 
-lut.pdf:
-	$(TEX) lut.tex
+lut.pdf: details.sty
 
-noc.pdf:
-	$(TEX) noc.tex
+noc.pdf: details.sty
 
-coverletter.pdf:
-	$(TEX) coverletter.tex
+coverletter.pdf: details.sty
 
-declaration.pdf:
-	$(TEX) declaration.tex
+declaration.pdf: details.sty
 
 clean:
 	rm *.aux
