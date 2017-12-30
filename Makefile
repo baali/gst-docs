@@ -1,4 +1,5 @@
 TEX = pdflatex -interaction nonstopmode
+SHARED = details.sty
 
 .SUFFIXES: .tex
 
@@ -7,13 +8,13 @@ TEX = pdflatex -interaction nonstopmode
 
 all: lut.pdf noc.pdf coverletter.pdf declaration.pdf
 
-lut.pdf: details.sty
+lut.pdf: $(SHARED)
 
-noc.pdf: details.sty
+noc.pdf: $(SHARED)
 
-coverletter.pdf: details.sty
+coverletter.pdf: $(SHARED)
 
-declaration.pdf: details.sty
+declaration.pdf: $(SHARED)
 
 clean:
 	rm *.aux
