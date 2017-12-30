@@ -19,4 +19,4 @@ clean:
 
 all: lut.pdf noc.pdf coverletter.pdf declaration.pdf
 
-.PHONY: lut noc coverletter declaration
+.PHONY: lut.pdf noc.pdf coverletter.pdf declaration.pdf
