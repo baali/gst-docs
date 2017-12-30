@@ -1,20 +1,22 @@
 TEX = pdflatex -interaction nonstopmode
 
-lut:
+lut.pdf:
 	$(TEX) lut.tex
 
-noc:
+noc.pdf:
 	$(TEX) noc.tex
 
-coverletter:
+coverletter.pdf:
 	$(TEX) coverletter.tex
 
-declaration:
+declaration.pdf:
 	$(TEX) declaration.tex
 
 clean:
 	rm *.aux
 	rm *.pdf
 	rm *.log
+
+all: lut.pdf noc.pdf coverletter.pdf declaration.pdf
 
 .PHONY: lut noc coverletter declaration

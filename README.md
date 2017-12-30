@@ -8,4 +8,4 @@ return.
 Apart from these PDFs you would need ID Cards of the witness you have
 for the LUT, your PAN card and an additional ID proof. There is one
 more document missing from current set, GST-RFD-Form11, current format
-as tables in it, which I am yet to put together in LaTeX format.
+has tables in it, which I am yet to put together in LaTeX format.
